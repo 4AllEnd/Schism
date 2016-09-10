@@ -1,0 +1,116 @@
+<File type="GUI">
+  <Definition type="main">
+    <Element type="BasicButton">
+      <color>0,.5,1,.8f</color>
+    </Element>
+    <Element type="CloseButton" parent="Basic Button">
+      <size type="Relative">
+        .9,.9,1.,1.
+      </size>
+      <text>X</text>
+    </Element>
+
+    <Element type="BasicWindow">
+      <Element type="Frame">
+        <onlclick type="Grab">
+        </onlclick>
+        <color>.0325f,0,.1625f,1.f</color>
+        <size type="Relative">
+          0.025f,0.025f,.975f,.9f
+        </size>
+      </Element>
+      <Element type="Titlebar">
+        <Element type="Icon">
+          <onlclick type="None">
+          </onlclick>
+          <color>.1f,.1,.1f,.8f</color>
+          <size type="Relative">
+            0.f,.0f,.1f,1.f
+          </size>
+        </Element>
+        <Element type="CloseButton">
+          <onlclick type="Close">
+          </onlclick>
+          <color>.75,0,0,1.f</color>
+          <size type="Relative">
+            .85,0.,1,1.
+          </size>
+        </Element>
+        <onlclick type="Grab">
+        </onlclick>
+        <color>0.f,.1,.2f,1.f</color>
+        <size type="Relative">
+          0.f,.9,1.,1.
+        </size>
+
+      </Element>
+    </Element>
+    <!--<Element type="CloseButton">
+          <onlclick type="Close">
+          </onlclick>
+          <color>1,0,0,1.f</color>
+          <size type="Relative">
+          .85,.9,1,1.
+          </size>
+          </Element>
+    <Element type="Titlebar">
+        <onlclick type="Grab">
+        </onlclick>
+        <color>0.f,.1,.2f,.9f</color>
+        <size type="Relative">
+          0.f,.9,.85,1.
+        </size>
+      </Element>-->
+  </Definition>
+  <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+
+  <Element name="Window1" type="Basic" parent="BasicWindow">
+    <color>
+      .5,.05,.5,.7
+    </color>
+    <position></position>
+    <size type="Absolute">
+      .0,.0,.25,.25
+    </size>
+  </Element>
+  <Element name="Window4" type="Basic" parent="BasicWindow">
+    <color>
+      .5,.55,.5,.7
+    </color>
+    <position></position>
+    <size type="Absolute">
+      .0,.0,.3,.4
+    </size>
+  </Element>
+  <Element name="Window2" parent="BasicWindow">
+    <color>
+      0,0,1,.8f
+    </color>
+  </Element>
+  <Element name="Window3" parent="BasicWindow">
+    <color>
+      1,0,1,.8f
+    </color>
+  </Element>
+
+
+</File>
+<!--
+--------------------------------------------
+Compilation
+--------------------------------------------
+Open compilation file
+define element "BasicButton" map with color
+"Element":{"BasicButton":{"color":"1,0,0"}}
+define element "CloseButton" map with "Basic Button" params
+/define or overwrite Basic Button properties with CloseButton property maps
+define  
+<Element type="None" parent="BasicButton">
+  </Element>
+  <Element parent="BasicButton">
+    <color>0,.5,.5,.9f</color>
+  </Element>
+"runtime"
+create usable element based on window
+-->
